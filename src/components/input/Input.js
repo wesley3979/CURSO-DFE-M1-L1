@@ -21,7 +21,7 @@ class Input extends Component {
 
     return (
       <div className="Input">
-        <label>{label}</label>
+        <label>{label} </label>
         <input type='number' onChange={this.handleChangeValue} ></input>
       </div>
     );

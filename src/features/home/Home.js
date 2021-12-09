@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import Header from '../../containers/header';
 import Input from '../../components/input';
 import Result from '../../components/result'
-import './Welcome.css';
+import './Home.css';
 
-class Welcome extends Component {
+class Home extends Component {
 
   constructor(props) {
     super(props);
@@ -25,18 +25,23 @@ class Welcome extends Component {
     const { title } = this.props;
     const { Data } = this.state;
     const { Data2 } = this.state;
-    const divClassName = 'InputDiv';
-    const inputLabel = 'Digite um número:';
+    const divClassName = 'divClassName';
+    const Equals = 'Equals';
+    const operationTypeClass = "operationTypeClass";
+    const operationType = "+";
+
 
     return (
-      <div className="Welcome">
+      <div className="Home">
         <Header title={title}></Header>
-        <div className={divClassName}> <Input label={inputLabel} callback={this.handleChangeData} /></div>
-        <div className={divClassName}> <Input label={inputLabel} callback={this.handleChangeData2} /></div>
-        <div> <Result data={Data} data2={Data2} /> </div>
+        <div className={divClassName}> <Input callback={this.handleChangeData} /></div>
+        <div className={operationTypeClass}>{operationType}</div>
+        <div className={divClassName}> <Input callback={this.handleChangeData2} /></div>
+        <div className={Equals}>=</div>
+        <div> <Result data={Data} data2={Data2} /></div>
       </div >
     )
   }
 
 }
-export default Welcome;
+export default Home;

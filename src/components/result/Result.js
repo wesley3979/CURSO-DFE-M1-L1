@@ -14,7 +14,7 @@ class Result extends Component {
 
     return (
       <div className="Result">
-        <p>{result}</p>
+        <p className="ResultData">{result}</p>
       </div>
     );
 

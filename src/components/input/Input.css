@@ -1,0 +1,22 @@
+input[type=number]::-webkit-inner-spin-button { 
+  -webkit-appearance: none;
+}
+
+.Input{
+  float:left;
+  width:65%;
+  height:100%;
+  padding-left:39%;
+  overflow: auto;
+}
+
+.Input input[type=number]{
+  color:#1afe49;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 44px;
+  width:30%;
+  margin-left:5px;
+  background-color: rgba(0,0,0,0);
+  border: 0.5px solid #1afe49;
+}

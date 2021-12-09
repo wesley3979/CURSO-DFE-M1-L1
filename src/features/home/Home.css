@@ -1,0 +1,13 @@
+.Home {
+  float:left;
+  width:100%;
+  height:100%;
+ }
+
+ .operationTypeClass, .Equals{
+  font-size: 44px;
+  color: #1afe49;
+  text-align: center;
+  font-weight: bold;
+  cursor:default;
+ }
